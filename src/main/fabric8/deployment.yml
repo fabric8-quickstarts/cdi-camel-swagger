@@ -5,11 +5,11 @@ spec:
       containers:
       - livenessProbe:
           httpGet:
-            path: "/swagger.json"
+            path: "/user/findAll"
             port: 8080
           initialDelaySeconds: 180
         readinessProbe:
           httpGet:
-            path: "/swagger.json"
+            path: "/user/findAll"
             port: 8080
           initialDelaySeconds: 10
