@@ -4,11 +4,10 @@ metadata:
     api.service.kubernetes.io/path: "/user/findAll"
     api.service.kubernetes.io/protocol: "REST"
     api.service.kubernetes.io/description-language: "SwaggerJSON"
-    api.service.kubernetes.io/description-path: "cxfcdi/swagger.json"
+    api.service.kubernetes.io/description-path: "/swagger.json"
     api.service.openshift.io/api-manager: "apiman"
     
 spec:
   ports:
     - port: 80
       targetPort: 8080
-  type: LoadBalancer
